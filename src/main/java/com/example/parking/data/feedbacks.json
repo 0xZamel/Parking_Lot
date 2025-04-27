@@ -1,0 +1,14 @@
+[
+  {
+    "rate": 5.0,
+    "feedbackMessage": "zy el fol",
+    "ownerID": 3,
+    "ReservationID": 3
+  },
+  {
+    "rate": 5.0,
+    "feedbackMessage": "top el top",
+    "ownerID": 4,
+    "ReservationID": 6
+  }
+]

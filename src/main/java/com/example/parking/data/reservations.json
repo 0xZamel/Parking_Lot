@@ -1,0 +1,114 @@
+[
+  {
+    "reservationID": 1,
+    "ownerID": 1,
+    "slotID": 1,
+    "reservationDate": "2024-12-23T14:42:13.423933",
+    "status": false,
+    "amount": 14.0
+  },
+  {
+    "reservationID": 2,
+    "ownerID": 3,
+    "slotID": 8,
+    "reservationDate": "2024-12-23T14:57:49.4743693",
+    "status": false,
+    "amount": 24.5
+  },
+  {
+    "reservationID": 4,
+    "ownerID": 3,
+    "slotID": 17,
+    "reservationDate": "2024-12-23T14:57:49.4764035",
+    "status": true,
+    "amount": 16.666666666666668
+  },
+  {
+    "reservationID": 5,
+    "ownerID": 4,
+    "slotID": 1,
+    "reservationDate": "2024-12-23T15:03:19.1556858",
+    "status": true,
+    "amount": 14.0
+  },
+  {
+    "reservationID": 6,
+    "ownerID": 4,
+    "slotID": 2,
+    "reservationDate": "2024-12-23T15:03:19.1556858",
+    "status": true,
+    "amount": 21.0
+  },
+  {
+    "reservationID": 7,
+    "ownerID": 4,
+    "slotID": 3,
+    "reservationDate": "2024-12-23T15:03:19.1556858",
+    "status": true,
+    "amount": 28.0
+  },
+  {
+    "reservationID": 8,
+    "ownerID": 1,
+    "slotID": 4,
+    "reservationDate": "2024-12-23T15:05:05.8169484",
+    "status": true,
+    "amount": 49.0
+  },
+  {
+    "reservationID": 9,
+    "ownerID": 3,
+    "slotID": 20,
+    "reservationDate": "2024-12-23T15:14:32.7321673",
+    "status": true,
+    "amount": 30.0
+  },
+  {
+    "reservationID": 10,
+    "ownerID": 2,
+    "slotID": 11,
+    "reservationDate": "2024-12-23T16:02:16.9141206",
+    "status": true,
+    "amount": 25.0
+  },
+  {
+    "reservationID": 11,
+    "ownerID": 2,
+    "slotID": 27,
+    "reservationDate": "2024-12-23T16:10:02.1468593",
+    "status": true,
+    "amount": 100.0
+  },
+  {
+    "reservationID": 12,
+    "ownerID": 2,
+    "slotID": 14,
+    "reservationDate": "2024-12-23T16:10:02.1468593",
+    "status": true,
+    "amount": 12.5
+  },
+  {
+    "reservationID": 13,
+    "ownerID": 2,
+    "slotID": 16,
+    "reservationDate": "2024-12-23T16:10:02.1468593",
+    "status": true,
+    "amount": 15.0
+  },
+  {
+    "reservationID": 14,
+    "ownerID": 2,
+    "slotID": 12,
+    "reservationDate": "2024-12-23T16:10:02.1468593",
+    "status": true,
+    "amount": 7.5
+  },
+  {
+    "reservationID": 15,
+    "ownerID": 7,
+    "slotID": 6,
+    "reservationDate": "2024-12-27T01:11:01.1030266",
+    "status": false,
+    "amount": 28.0
+  }
+]

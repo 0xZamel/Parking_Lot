@@ -1,0 +1,124 @@
+.body {
+    -fx-background-color: #FFE1FF;
+}
+.shadow{
+    -fx-effect : dropShadow( three-pass-box , rgba(0,0,0,0.3) ,10.0 ,0.0, 0.0, 10.0);
+}
+.boxcontainer{
+    -fx-background-color: rgba( 255,255,255,1);
+    -fx-background-radius: 12;
+    -fx-effect : dropShadow( three-pass-box , rgba(0,0,0,0.3) ,10.0 ,0.0, 0.0, 10.0);
+}
+
+.btn-menu {
+    -fx-text-fill: #fff;
+    -fx-background-color: linear-gradient(to bottom , #005aa7,#005aa7);
+
+    -fx-border-width: 0.7px;
+    -fx-cursor: hand;
+    -fx-font-weight: 700;
+    -fx-font-size: 17px;
+    -fx-border-radius: 50px;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+    -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 1);
+}
+
+.btn-menu:hover{
+    -fx-background-color: #0D92F4;
+    -fx-opacity: 0.7;
+}
+.btn-menu:pressed {
+    -fx-background-color: #014b8a;
+    -fx-effect: none;
+    -fx-translate-y: 2px;
+    -fx-opacity:1.1;
+}
+
+.Text {
+    -fx-alignment: center;
+    -fx-font-size: 33;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-text-decoration: underline;
+}
+
+.text-fieldd{
+    -fx-border-radius: 5px;
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+    -fx-border-width: 2px;
+    -fx-border-color:  #76a8c4;
+    -fx-focus-color: #4CAF50;
+}
+
+.text-fieldd:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #0A3981;
+}
+
+.text-fieldd:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color:     #1F509A;
+}
+
+.signup_label {
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-text-fill:  #005aa7;
+    -fx-text-decoration: underline;
+}
+.login_label {
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-text-fill:  #005aa7;
+    -fx-text-decoration: underline;
+}
+
+.label2{
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill:  #005aa7;
+    -fx-text-decoration: underline;
+}
+
+.btn1-menu {
+    -fx-text-fill: #fff;
+    -fx-background-color: linear-gradient(to bottom , #005aa7,#005aa7);
+
+    -fx-border-width: 0.7px;
+    -fx-cursor: hand;
+    -fx-font-weight: 500;
+    -fx-font-size: 12px;
+    -fx-border-radius: 50px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1.2px;
+    -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 1);
+}
+
+.btn1-menu:hover{
+    -fx-background-color: #0D92F4;
+    -fx-opacity: 0.7;
+}
+.btn1-menu:pressed {
+    -fx-background-color: #014b8a;
+    -fx-effect: none;
+    -fx-translate-y: 2px;
+    -fx-opacity:1.1;
+}
+.border-text {
+    -fx-text-fill: white;
+    -fx-stroke: #005aa7;
+    -fx-font-family: 'Cyberway Riders', sans-serif;
+    -fx-stroke-width: 5px;
+    -fx-font-size: 50px;
+    -fx-effect: dropshadow(three-pass-box, #005aa7, 0, 0, 5, 5);
+}
+
+.error_msg_label{
+    -fx-font-size: 11;
+    -fx-font-weight: bold;
+    -fx-text-fill:  red;
+    -fx-alignment: center;
+    -fx-text-decoration: underline;
+}

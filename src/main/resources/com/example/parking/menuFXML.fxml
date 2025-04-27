@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="685.0" stylesheets="@../../../css/menuStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parking.gui.menuController">
+    <children>
+        <ImageView fitHeight="441.0" fitWidth="685.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../css/images/CAR.jpg" />
+            </image>
+        </ImageView>
+        <Pane prefHeight="428.0" prefWidth="692.0" style="-fx-background-color: black; -fx-opacity: 0.3;" visible="false" />
+        <Pane fx:id="buttonHolder" prefHeight="428.0" prefWidth="698.0">
+            <children>
+                <Button layoutX="167.0" layoutY="348.0" mnemonicParsing="false" onAction="#goToLoginPage" prefHeight="41.0" prefWidth="94.0" styleClass="btn-menu" text="Login" />
+                <Button layoutX="406.0" layoutY="348.0" mnemonicParsing="false" onAction="#goToSignUpPage" prefHeight="42.0" prefWidth="94.0" styleClass="btn-menu" text="Sign Up" />
+            <Label alignment="CENTER" layoutX="204.0" prefHeight="73.0" prefWidth="254.0" styleClass="border-text" text="PARKING" textFill="#f7f3f3">
+               <font>
+                  <Font name="Cyberway Riders" size="12.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <AnchorPane fx:id="loginPage" prefHeight="424.0" prefWidth="685.0" visible="false">
+            <children>
+                <Pane layoutY="-3.0" prefHeight="428.0" prefWidth="686.0" style="-fx-background-color: black; -fx-opacity: 0.55;" />
+                <Button mnemonicParsing="false" onAction="#goToMenu" prefHeight="426.0" prefWidth="686.0" style="-fx-opacity: 0;" text="Button" />
+                <Pane layoutX="201.0" layoutY="64.0" prefHeight="312.0" prefWidth="254.0" styleClass="boxcontainer">
+                    <children>
+                        <TextField fx:id="usernameField" layoutX="11.0" layoutY="79.0" prefHeight="45.0" prefWidth="231.0" promptText="Username" styleClass="text-fieldd">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" layoutX="11.0" layoutY="144.0" prefHeight="45.0" prefWidth="231.0" promptText="Password" styleClass="text-fieldd">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </PasswordField>
+                        <Label alignment="CENTER" layoutX="80.0" prefHeight="49.0" prefWidth="94.0" styleClass="login_label" text="Login" />
+                        <Button layoutX="78.0" layoutY="256.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="42.0" prefWidth="98.0" styleClass="btn-menu" text="Login" />
+                        <Label fx:id="login_msg" alignment="CENTER" layoutX="12.0" layoutY="224.0" prefHeight="26.0" prefWidth="231.0" style="-fx-text-fill: red;" styleClass="error_msg_label" />
+                  <CheckBox fx:id="showPasswordBox" layoutX="14.0" layoutY="197.0" mnemonicParsing="false" styleClass="label2" text="Show Password" />
+                  <TextField fx:id="PasswordVisible" layoutX="11.0" layoutY="144.0" prefHeight="45.0" prefWidth="231.0" promptText="Password Shown" styleClass="text-fieldd">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="signUpPage" layoutX="10.0" layoutY="10.0" prefHeight="424.0" prefWidth="685.0" visible="false">
+            <children>
+                <Pane layoutX="-14.0" layoutY="-10.0" prefHeight="428.0" prefWidth="692.0" style="-fx-background-color: black; -fx-opacity: 0.55;" />
+                <Button layoutX="-12.0" layoutY="-12.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="436.0" prefWidth="698.0" style="-fx-opacity: 0;" text="Button" />
+                <Pane layoutX="88.0" layoutY="5.0" prefHeight="389.0" prefWidth="499.0" styleClass="boxcontainer">
+                    <children>
+                        <Label alignment="CENTER" layoutX="186.0" prefHeight="49.0" prefWidth="128.0" styleClass="signup_label" text="Sign Up" />
+                        <TextField fx:id="usernameField2" layoutX="11.0" layoutY="62.0" prefHeight="42.0" prefWidth="217.0" promptText="Username" styleClass="text-fieldd">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="passwordField2" layoutX="242.0" layoutY="62.0" prefHeight="42.0" prefWidth="231.0" promptText="Password" styleClass="text-fieldd">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </PasswordField>
+                        <Button layoutX="201.0" layoutY="334.0" mnemonicParsing="false" onAction="#signUpButton" prefHeight="42.0" prefWidth="98.0" styleClass="btn-menu" text="Sign Up" />
+                        <TextField fx:id="licenseNumberField" layoutX="11.0" layoutY="116.0" prefHeight="39.0" prefWidth="217.0" promptText="License Number" styleClass="text-fieldd">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+                        <ComboBox fx:id="vehicleTypeComboBox" layoutX="11.0" layoutY="193.0" prefHeight="34.0" prefWidth="128.0" promptText="Vehicle Type" styleClass="text-fieldd">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Car" />
+                                    <String fx:value="FourByFour" />
+                                    <String fx:value="Bike" />
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="11.0" prefWidth="137.0" styleClass="label2" text="Add Vehicle" />
+                        <TextField fx:id="licensePlateField" layoutX="163.0" layoutY="193.0" prefHeight="34.0" prefWidth="174.0" promptText="License Plate : ABC-1234" styleClass="text-fieldd" />
+                        <Button id="addVehicleBtn" layoutX="372.0" layoutY="196.0" onAction="#handleAddVehicle" prefHeight="25.0" prefWidth="83.0" styleClass="btn1-menu" text="Add Vehicle" />
+                        <ListView fx:id="vehicleListView" layoutX="11.0" layoutY="256.0" prefHeight="57.0" prefWidth="293.0" />
+                        <Label layoutX="14.0" layoutY="230.0" prefHeight="26.0" prefWidth="94.0" styleClass="label2" text="Vehicles List" />
+                        <Button id="removeVehicleBtn" layoutX="314.0" layoutY="270.0" onAction="#handleRemoveVehicle" prefHeight="26.0" prefWidth="156.0" styleClass="btn1-menu" text="Remove Selected Vehicle" />
+                        <Label fx:id="signup_msg" layoutX="19.0" layoutY="335.0" prefHeight="42.0" prefWidth="162.0" styleClass="error_msg_label" />
+                  <TextField fx:id="balanceField" layoutX="242.0" layoutY="116.0" prefHeight="39.0" prefWidth="231.0" promptText="Balance" styleClass="text-fieldd">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

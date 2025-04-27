@@ -1,0 +1,324 @@
+[
+  {
+    "ownerID": 1,
+    "licenseNumber": "AH468",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "AH-54"
+      },
+      {
+        "Type": "Bike",
+        "licensePlate": "KKL-466"
+      }
+    ],
+    "reservations": [
+      1,
+      8
+    ],
+    "payment": {
+      "ownerID": 1,
+      "balance": 951.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 1.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "fady",
+    "password": "123456"
+  },
+  {
+    "ownerID": 2,
+    "licenseNumber": "SH464",
+    "vehicles": [
+      {
+        "Type": "Bike",
+        "licensePlate": "K-46"
+      }
+    ],
+    "reservations": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "payment": {
+      "ownerID": 2,
+      "balance": 19890.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 2.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "omar zamel",
+    "password": "123456"
+  },
+  {
+    "ownerID": 3,
+    "licenseNumber": "a213",
+    "vehicles": [
+      {
+        "Type": "FourByFour",
+        "licensePlate": "AH-4666"
+      },
+      {
+        "Type": "Car",
+        "licensePlate": "ABC-222"
+      },
+      {
+        "Type": "FourByFour",
+        "licensePlate": "CDD-222"
+      }
+    ],
+    "reservations": [
+      2,
+      4,
+      9
+    ],
+    "payment": {
+      "ownerID": 3,
+      "balance": 46.33333333333333,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 6.333333333333334
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "karim benzema",
+    "password": "123456"
+  },
+  {
+    "ownerID": 4,
+    "licenseNumber": "LMAO555",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "LOL-555"
+      }
+    ],
+    "reservations": [
+      5,
+      6,
+      7
+    ],
+    "payment": {
+      "ownerID": 4,
+      "balance": 9936.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 3.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "BasedBateman",
+    "password": "yakout0563"
+  },
+  {
+    "ownerID": 5,
+    "licenseNumber": "2982948",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "L-2"
+      }
+    ],
+    "reservations": [],
+    "payment": {
+      "ownerID": 5,
+      "balance": 10000.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "mohy",
+    "password": "123456"
+  },
+  {
+    "ownerID": 6,
+    "licenseNumber": "224242443243",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "A-3"
+      },
+      {
+        "Type": "FourByFour",
+        "licensePlate": "Y-2"
+      }
+    ],
+    "reservations": [],
+    "payment": {
+      "ownerID": 6,
+      "balance": 2500.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "shahd",
+    "password": "123456"
+  },
+  {
+    "ownerID": 7,
+    "licenseNumber": "54845121548",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "X-3"
+      },
+      {
+        "Type": "Bike",
+        "licensePlate": "X-3"
+      }
+    ],
+    "reservations": [
+      15
+    ],
+    "payment": {
+      "ownerID": 7,
+      "balance": 2000.0,
+      "penalty": 3.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "bayomi",
+    "password": "123456"
+  },
+  {
+    "ownerID": 8,
+    "licenseNumber": "848484",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "X-3"
+      },
+      {
+        "Type": "Bike",
+        "licensePlate": "X-3"
+      }
+    ],
+    "reservations": [],
+    "payment": {
+      "ownerID": 8,
+      "balance": 20000.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "elsoahby",
+    "password": "123456"
+  },
+  {
+    "ownerID": 9,
+    "licenseNumber": "2345",
+    "vehicles": [
+      {
+        "Type": "Bike",
+        "licensePlate": "A-1"
+      },
+      {
+        "Type": "Car",
+        "licensePlate": "T-2"
+      }
+    ],
+    "reservations": [],
+    "payment": {
+      "ownerID": 9,
+      "balance": 250000.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "donatelooooooooooo",
+    "password": "162055"
+  },
+  {
+    "ownerID": 10,
+    "licenseNumber": "kjcopijpo[",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "VSW-5"
+      }
+    ],
+    "reservations": [],
+    "payment": {
+      "ownerID": 10,
+      "balance": 12.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "niojn$@398888u",
+    "password": "1234567"
+  },
+  {
+    "ownerID": 11,
+    "licenseNumber": "123456",
+    "vehicles": [
+      {
+        "Type": "Car",
+        "licensePlate": "VSW-5"
+      }
+    ],
+    "reservations": [],
+    "payment": {
+      "ownerID": 11,
+      "balance": 12.0,
+      "penalty": 0.0,
+      "lastHours": {
+        "Car": 0.0,
+        "Bike": 0.0,
+        "FourByFour": 0.0
+      },
+      "REWARD_HOURS": 7,
+      "PENALTY_AMOUNT": 3.0
+    },
+    "userName": "Nour Nafea",
+    "password": "123456"
+  }
+]

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<GridPane prefHeight="633.0" prefWidth="955.0" stylesheets="@../../../css/userStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parking.gui.UserPageController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="692.0000366210937" minWidth="10.0" prefWidth="198.13336791992188" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="933.6000370025636" minWidth="10.0" prefWidth="757.0666320800781" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="633.0" prefWidth="160.0" spacing="50.0" styleClass="slide_container">
+            <children>
+                <Pane prefHeight="72.0" prefWidth="181.0" styleClass="logo" stylesheets="@../../../css/adminStyle.css" />
+                <Button mnemonicParsing="false" onAction="#goToHomePage" prefHeight="25.0" prefWidth="82.0" styleClass="btn-user" text="HOME">
+               <stylesheets>
+                  <URL value="@../../../css/adminStyle.css" />
+                  <URL value="@../../../css/menuStyle.css" />
+               </stylesheets></Button>
+                <Button mnemonicParsing="false" onAction="#chooseReservations" styleClass="btn-user" text="RESERVATIONS" />
+                <Button mnemonicParsing="false" onAction="#goToDepositPage" styleClass="btn-user" text="DEPOSIT" />
+                <Button mnemonicParsing="false" onAction="#goToFeedbackPage" styleClass="btn-user" text="FEEDBACK" />
+                <Button mnemonicParsing="false" onAction="#goToUpdateDataPage" styleClass="btn-user" text="UPDATE DATA" />
+            </children>
+            <padding>
+                <Insets top="15.0" />
+            </padding>
+        </VBox>
+        <VBox id="v" prefHeight="200.0" prefWidth="100.0" stylesheets="@../../../css/adminStyle.css" GridPane.columnIndex="1">
+            <children>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="783.0" styleClass="headerPane">
+                    <children>
+                        <Label fx:id="headerText" alignment="CENTER" layoutX="90.0" layoutY="5.0" prefHeight="66.0" prefWidth="561.0" styleClass="header_label" text="Welcome UserName" />
+                        <Button layoutX="664.0" layoutY="23.0" mnemonicParsing="false" onAction="#logoutButton" styleClass="logout-btn" text="LOGOUT" />
+                  <Pane fx:id="backPane" layoutX="14.0" layoutY="10.0" prefHeight="54.0" prefWidth="53.0" stylesheets="@../../../css/adminStyle.css">
+                  <Button layoutX="10.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleBackButton" styleClass="back-btn" text="↩" />
+                  </Pane>
+                    </children>
+                </AnchorPane>
+            <Separator prefHeight="0.0" prefWidth="758.0" />
+                <StackPane prefHeight="549.0" prefWidth="758.0" styleClass="stack">
+                    <children>
+                  <Pane fx:id="homePane" prefHeight="200.0" prefWidth="200.0" visible="false">
+                     <children>
+                        <Pane id="HomeStack" prefHeight="305.0" prefWidth="758.0" />
+                        <Pane layoutX="153.0" layoutY="333.0" prefHeight="155.0" prefWidth="451.0" styleClass="info-box">
+                           <children>
+                              <Label layoutX="20.0" layoutY="20.0" styleClass="info-title" text="About Us" />
+                              <Label layoutX="20.0" layoutY="60.0" prefWidth="420.0" styleClass="info-text" text="Our parking lot system provides a seamless experience for users, ensuring safety, convenience, and efficiency. Learn more about our features and how we make parking easier for you." wrapText="true" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                        <Pane fx:id="reservationPane" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../css/userStyle.css" visible="false">
+                            <children>
+                        <Pane id="reserve" onMouseClicked="#goToMakeReservation" prefHeight="550.0" prefWidth="372.0" styleClass="vehicleType">
+                           <children>
+                              <Label alignment="CENTER" layoutX="43.0" layoutY="44.0" prefHeight="47.0" prefWidth="279.0" styleClass="header_label" text="Make Reservation" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                                <Pane id="view" layoutX="376.0" onMouseClicked="#goToReservationHistory" prefHeight="550.0" prefWidth="389.0" styleClass="vehicleType" stylesheets="@../../../css/userStyle.css">
+                           <children>
+                              <Label alignment="CENTER" layoutX="31.0" layoutY="43.0" prefHeight="47.0" prefWidth="322.0" styleClass="header_label" text="View Reservations" />
+                           </children></Pane>
+                            </children>
+                        </Pane>
+
+                  <ScrollPane fx:id="makeReservationPane" prefHeight="550.0" prefWidth="469.0" styleClass="total-amount-label" stylesheets="@../../../css/userStyle.css" visible="false">
+                     <content>
+                        <GridPane fx:id="gridPaneSlots" alignment="CENTER" hgap="20" prefHeight="494.0" prefWidth="743.0" vgap="20" />
+                     </content>
+                  </ScrollPane>
+                        <Pane fx:id="historyReservationPane" prefHeight="550.0" prefWidth="758.0" visible="false">
+                            <children>
+                                <TableView fx:id="ReservationTable" layoutY="18.0" prefHeight="456.0" prefWidth="758.0" styleClass="AdminStacksTables" stylesheets="@../../../css/adminStyle.css" />
+                                <Button layoutX="429.0" layoutY="486.0" mnemonicParsing="false" onAction="#cancelReservation" prefHeight="42.0" prefWidth="140.0" styleClass="make-reservation-btn" text="Cancel" />
+                                <Button layoutX="153.0" layoutY="486.0" mnemonicParsing="false" onAction="#updateReservationButton" prefHeight="42.0" prefWidth="140.0" styleClass="make-reservation-btn" text="Update" />
+                            </children>
+                        </Pane>
+                        <Pane fx:id="depositPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White;" visible="false">
+                            <VBox alignment="CENTER" layoutX="148.0" layoutY="14.0" prefHeight="511.0" prefWidth="479.0" spacing="20" style="-fx-background-color: #ffffff;" stylesheets="@../../../css/userStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+                                <!-- Balance Label -->
+                                <Label fx:id="balanceLabel" styleClass="balance-label" text="Current Balance: $0.00" />
+
+                                <!-- Placeholder Pane for Add Funds Icon -->
+                                <Pane id="add_funds" fx:id="addFundsIconPane" prefHeight="180.0" prefWidth="479.0" styleClass="add_funds" stylesheets="@../../../css/userStyle.css" />
+
+                                <!-- TextField for deposit amount -->
+                                <TextField fx:id="depositAmountField" promptText="Enter deposit amount" styleClass="text-fieldd" />
+
+                                <!-- Deposit Button -->
+                                <Button fx:id="depositButton" onAction="#depositView" styleClass="make-reservation-btn" text="Add Funds">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                            </VBox>
+                        </Pane>
+                  <AnchorPane fx:id="feedbackPane" prefHeight="273.0" prefWidth="722.0" stylesheets="@../../../css/userStyle.css" visible="false">
+                     <children>
+                        <Pane id="feedback_image" layoutX="73.0" prefHeight="290.0" prefWidth="611.0" />
+                        <Label fx:id="reservationID_label" layoutX="37.0" layoutY="303.0" styleClass="form-label" stylesheets="@../../../css/userStyle.css" text="Enter your reservation ID:">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ReservationID_field" layoutX="218.0" layoutY="295.0" prefHeight="36.0" prefWidth="153.0" promptText="Reservation ID" styleClass="text-fieldd" />
+                        <Label fx:id="Rate_label" layoutX="391.0" layoutY="288.0" prefHeight="46.0" prefWidth="162.0" styleClass="form-label" stylesheets="@../../../css/userStyle.css" text="Rate your Experience:">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Rating fx:id="RatingBar" layoutX="550.0" layoutY="293.0" prefHeight="35.0" prefWidth="208.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rating>
+                        <TextArea fx:id="feedbackMessage" layoutX="218.0" layoutY="353.0" prefHeight="78.0" prefWidth="420.0" promptText="Leave a message" styleClass="text-fieldd" />
+                        <Label fx:id="Msg_label" layoutX="38.0" layoutY="382.0" styleClass="form-label" stylesheets="@../../../css/userStyle.css" text="Comment your feedback:">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="305.0" layoutY="449.0" mnemonicParsing="false" onAction="#feedbackSubmitButton" prefHeight="36.0" prefWidth="120.0" styleClass="make-reservation-btn" text="Submit">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label fx:id="submit_msg" layoutX="224.0" layoutY="500.0" prefHeight="35.0" prefWidth="291.0" styleClass="error_msg_label" />
+                     </children>
+                  </AnchorPane>
+                        <Pane id="UpdataDataStack" fx:id="updateDataPane" prefHeight="410.0" prefWidth="758.0" stylesheets="@../../../css/adminStyle.css" visible="false" />
+                    </children>
+               <stylesheets>
+                  <URL value="@../../../css/adminStyle.css" />
+                  <URL value="@../../../css/userStyle.css" />
+               </stylesheets>
+                </StackPane>
+            </children>
+        </VBox>
+    </children>
+</GridPane>
